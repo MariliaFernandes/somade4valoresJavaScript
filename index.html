@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soma de 4 valores javascript </title>
+    <script type="text/javascript">
+        function somarValores(){
+        var s1 = document.getElementById("s1").value;
+        var s2 = document.getElementById("s2").value;
+        var s3 = document.getElementById("s3").value;
+        var s4 = document.getElementById("s4").value;
+        var s5 = parseInt(s1) + parseInt(s2)+ parseInt(s3) + parseInt(s4);
+
+        alert(s5);
+    }
+    </script>
+</head>
+<body style="background-color:rgb(248, 151, 217)">
+    <center><h2>Site para fazer a Soma</h2>
+    <p><aligh="justify"><font color=white size=14px> Calcule: </font> </aligh></p></center>
+    <center>
+    <fieldset>
+        <br>
+        <label>Digite 1:</label>
+        <input id="s1" type="text"/>
+        <br>
+        <label>Digite 2: </label>
+        <input id="s2" type="text"/>
+        <br>
+        <label>Digite 3: </label>
+        <input id="s3" type="text"/>
+        <br>
+        <label>Digite 4:  </label>
+        <input id="s4" type="text"/>
+        <br>
+        <button id="somar" onclick="somarValores()">Somar</button>
+    </fieldset>
+    </center>
+</body>
+</html>
